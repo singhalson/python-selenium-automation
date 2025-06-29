@@ -25,3 +25,21 @@ driver.find_element(By.ID, 'createAccountSubmit')
 
 #no link for 'forgot your password' and 'other issues with sign-in'
 
+#Locators for Create Account on Amazon
+#By XPAth, amazon logo
+driver.find_element(By.XPATH, "//i[@aria-label='Amazon']"
+
+#By CSS_Selectors, class, Sign in or create account
+driver.find_element(By.CSS_SELECTOR, ".a-size-medium-plus.a-spacing-small")
+
+#By CSS_SELECTORS, ID, text box to put email
+driver.find_element(By.ID, "ap_email_login")
+
+#By CSS_SELECTORS, class, sign in with another account
+driver.find_element(By.CSS_SELECTOR, ".a-link-normal.signin-with-another-account")
+
+#By CSS selectors, class; conditions of use
+driver.find_element(By.CSS_SELECTOR, "[href*='ap_signin_notification_condition_of_use']" )
+
+#By CSS_Selectors, class; Privacy Notice
+driver.find_element(By.CSS_SELECTOR, ".legal-text [href*='privacy_notice']")
