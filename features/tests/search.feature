@@ -5,12 +5,20 @@ Feature: Test for target Search
   Scenario: User can search for a product on Target
     Given Open target main page
     When Search for tea
-    Then Verify search worked
+    Then Verify search worked for tea
 
-  Scenario: User can click on the cart icon
+  Scenario: User can search for a mug on Target
     Given Open target main page
-    When Clicked on cart icon
-    Then Verify 'Your cart is empty' message is shown
+    When Search for mug
+    Then Verify search worked for mug
+
+  Scenario: User can search for a coffee on Target
+    Given Open target main page
+    When Search for coffee
+    Then Verify search worked for coffee
+
+
+
 
   Scenario: User can signin after logging out
     Given Open target main page
