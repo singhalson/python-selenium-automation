@@ -8,7 +8,7 @@ from time import sleep
 def search_product(context, search_word):
     context.driver.find_element(By.ID, 'search').send_keys(search_word)
     context.driver.find_element(By.XPATH, "//button[@data-test='@web/Search/SearchButton']").click()
-    sleep(30)
+    wait()
 
 
 @when('Clicked on cart icon')
