@@ -1,7 +1,5 @@
-Feature: Test Scenarios for Search functionality
+Feature: Tests for product details
 
-  Scenario: User can search for a product
-    Given Open Google page
-    When Input Car into search field
-    And Click on search icon
-    Then Product results for Car are shown
+  Scenario: User can select colors
+    Given Open product A-91269718 page
+    Then Verify user can click through colors
